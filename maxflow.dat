@@ -1,11 +1,11 @@
-set N := Zoo A B C D E Home;
-set A := (Zoo,A) (Zoo,B) (A,C) (A,D) (B,A) (B,C) (C,D) (C,E) (D,E) (D,Home) (E,Home);
+set N := Source A B C D E Sink;
+set A := (Source,A) (Source,B) (A,C) (A,D) (B,A) (B,C) (C,D) (C,E) (D,E) (D,Sink) (E,Sink);
 
-param s := Zoo;
-param t := Home;
+param s := Source;
+param t := Sink;
 param: c :=
-Zoo A 11
-Zoo B 8
+Source A 11
+Source B 8
 A C 5
 A D 8
 B A 4
@@ -13,5 +13,5 @@ B C 3
 C D 2
 C E 4
 D E 5
-D Home 8
-E Home 6;
+D Sink 8
+E Sink 6;
